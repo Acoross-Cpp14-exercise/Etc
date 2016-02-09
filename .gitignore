@@ -1,0 +1,9 @@
+*.suo
+*.obj
+*.lastbuildstate
+*.log
+*.tlog
+*.iobj
+*.db
+/x64/*
+/Protobuf_exercise/x64/*
