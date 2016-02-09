@@ -138,9 +138,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="s_protocol\s_protocol.cpp" />
     <ClCompile Include="s_protocol\s_protocol.pb.cc" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="s_protocol\s_protocol.h" />
     <ClInclude Include="s_protocol\s_protocol.pb.h" />
   </ItemGroup>
   <ItemGroup>

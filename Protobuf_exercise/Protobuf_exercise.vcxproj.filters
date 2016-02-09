@@ -24,6 +24,9 @@
     <ClCompile Include="s_protocol\s_protocol.pb.cc">
       <Filter>s_protocol</Filter>
     </ClCompile>
+    <ClCompile Include="s_protocol\s_protocol.cpp">
+      <Filter>s_protocol</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="s_protocol\compile.bat">
@@ -35,6 +38,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="s_protocol\s_protocol.pb.h">
+      <Filter>s_protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="s_protocol\s_protocol.h">
       <Filter>s_protocol</Filter>
     </ClInclude>
   </ItemGroup>
