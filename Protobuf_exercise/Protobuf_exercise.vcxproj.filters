@@ -13,7 +13,7 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="protobuf">
+    <Filter Include="s_protocol">
       <UniqueIdentifier>{d7d269f4-9c52-4d76-91b6-c929a37f63b1}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -21,13 +21,21 @@
     <ClCompile Include="main.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="protobuf\test.pb.cc">
-      <Filter>protobuf</Filter>
+    <ClCompile Include="s_protocol\s_protocol.pb.cc">
+      <Filter>s_protocol</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="protobuf\test.pb.h">
-      <Filter>protobuf</Filter>
+    <None Include="s_protocol\compile.bat">
+      <Filter>s_protocol</Filter>
+    </None>
+    <None Include="s_protocol\s_protocol.proto">
+      <Filter>s_protocol</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="s_protocol\s_protocol.pb.h">
+      <Filter>s_protocol</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

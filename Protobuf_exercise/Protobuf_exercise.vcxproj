@@ -113,6 +113,9 @@
       <OptimizeReferences>true</OptimizeReferences>
       <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies);libprotobuf.lib;libprotobuf-lite.lib;libprotoc.lib;</AdditionalDependencies>
     </Link>
+    <PreBuildEvent>
+      <Command>s_protocol\compile.bat</Command>
+    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -129,13 +132,20 @@
       <OptimizeReferences>true</OptimizeReferences>
       <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies);libprotobuf.lib;libprotobuf-lite.lib;libprotoc.lib;</AdditionalDependencies>
     </Link>
+    <PreBuildEvent>
+      <Command>s_protocol\compile.bat</Command>
+    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="protobuf\test.pb.cc" />
+    <ClCompile Include="s_protocol\s_protocol.pb.cc" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="protobuf\test.pb.h" />
+    <ClInclude Include="s_protocol\s_protocol.pb.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="s_protocol\compile.bat" />
+    <None Include="s_protocol\s_protocol.proto" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

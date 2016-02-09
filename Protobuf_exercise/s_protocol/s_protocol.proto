@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package acoross.s_protocol;
+
+message s_version {
+  int32 version_num = 1;
+}
+
+message Test {
+  string type_url = 1;
+  bytes value = 2;
+  int64 val2 = 3;
+  int32 val3 = 4;
+}
+
+message Test2 {
+  enum Type
+  {
+	ENUM_0 = 0;
+	ENUM_1 = 1;
+  }
+
+  int32 val = 1;
+  Type etype = 2;
+}
